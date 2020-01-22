@@ -1,0 +1,55 @@
+.auth {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 250px;
+    border-radius: 30px;
+    background: #fff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &__input {
+      margin-bottom: 25px;
+      padding: 5px 8px;
+      border: none;
+      border-bottom: 1px solid #d3d3d3;
+      font-size: 16px;
+      outline: none;
+      transition: .4s;
+
+      &.last {
+        margin-bottom: 50px;
+      }
+
+      &:focus {
+        border-bottom-color: #8383bd;
+      }
+
+    }
+
+    &__btn {
+      padding: 14px 25px;
+      border: 1px solid #cecece;
+      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      transition: .5s;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        background: #cecece;
+        color: #fff;
+      }
+    }
+  }
+}

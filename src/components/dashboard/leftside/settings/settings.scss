@@ -1,0 +1,62 @@
+.settings {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: calc(100% - 100px);
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: #2d91d8;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    
+    &__avatar {
+      width: 40px;
+      height: 40px;
+
+      &__nonimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        background: #000;
+        color: #fff;
+        cursor: default;
+      }
+    }
+
+    &__name {
+      display: inline-block;
+      padding-left: 20px;
+      font-size: 24px;
+      font-weight: normal;
+      color: #fff;
+    }
+  }
+
+  &__exit {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover {
+      background: #3f3f3f;
+      color: #fff;
+    }
+  }
+}

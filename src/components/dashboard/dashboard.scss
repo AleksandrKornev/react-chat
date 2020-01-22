@@ -1,0 +1,38 @@
+.dashboard {
+  &__wrapper {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #4b4b4b;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    outline: none;
+  }
+
+  &__left {
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    border-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #2ca4fa;
+    transition: .4s;
+
+    &.active {
+      width: 350px;
+    }
+  }
+
+  &__right {
+    width: 450px;
+    height: 100%;
+    transition: .4s;
+
+    &.active {
+      width: 550px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.chats {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 90px);
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+}

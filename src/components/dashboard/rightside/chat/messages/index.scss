@@ -1,0 +1,39 @@
+.messages {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    overflow-y: scroll;
+  }
+
+  &__message {
+    &__wrapper {
+      display: flex;
+      flex-shrink: 0;
+      width: 100%;
+      min-height: 30px; 
+      padding: 10px;
+      box-sizing: border-box;
+
+      &.current {
+        justify-content: flex-end;
+
+        & > .messages__message {
+          background: #cbdffc;
+        }
+      }
+
+      &.another {
+        justify-content: flex-start;
+      }
+    }
+
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #fff;
+  }
+}

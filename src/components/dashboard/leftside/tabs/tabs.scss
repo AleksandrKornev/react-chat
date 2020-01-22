@@ -1,0 +1,51 @@
+.tabs {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  height: 80%;
+
+  &__tab {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, .5);
+    transition: .4s;
+    cursor: pointer;
+    user-select: none;
+
+    &.active, &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+
+    &__img {
+      &.message {
+        width: 45px;
+        height: 40px;
+      }
+
+      &.settings {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
